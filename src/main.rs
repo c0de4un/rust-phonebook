@@ -10,8 +10,14 @@ fn main() {
     Command::print_commands();
 
     let mut buf = String::new();
-    println!("Enter command & arguments:");
-    stdin().read_line(&mut buf);
+    let mut is_quit_requested = false;
+    while (!is_quit_requested) {
+        buf.clear();
+        println!("Enter command & arguments:");
+        stdin().read_line(&mut buf).expect("failed to read command");
+
+        // @TODO:
+    }
 
 
     println!("\n= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =");
