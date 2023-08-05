@@ -24,6 +24,14 @@ pub struct CreateCommand {
 impl Command for CreateCommand {
     fn run(&self) {
         // @TODO: CreateCommand::run()
+
+        for i in 0..self.args.len() {
+            let arg = &self.args[i];
+
+            // match arg {
+            //     "name" =>
+            // }
+        }
     }
 }
 
